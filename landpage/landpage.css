@@ -46,6 +46,18 @@
 
 /**/
 
+/*container*/
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
 * {
     margin: 0%;
 }
@@ -56,18 +68,17 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
     width: 100%;
+    height: 10%;
 }
 
 /*links da nav*/
 
 .links {
     width: 33%;
-    height: 100px;
+    height: 100%;
     font-family: var(--fonte-upper);
     color: var(--verde-escuro);
-    font-size: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,6 +87,7 @@
     padding: 3%;
 }
 .links a{
+    font-size: 90%;
     text-decoration: none;
     color: var(--verde-escuro);
 }
@@ -95,20 +107,21 @@
     text-align: center;
     line-height: 90%;
     width: 34%;
-    height: 100px;
+    height: 80%;
 }
 
 .p1 {
     font-family: var(--fonte-upper);
     color: var(--verde-claro);
-    font-size: 25px;
+    font-size: 160%;
+
 
 }
 
 .p2 {
     font-family: var(--fonte-detalhes);
     color: var(--amarelo-escuro);
-    font-size: 23px;
+    font-size: 130%;
     z-index: 1;
     -webkit-text-stroke: #d3a92e 1px;
 }
@@ -116,7 +129,7 @@
 .p3 {
     font-family: var(--fonte2);
     color: var(--verde-escuro);
-    font-size:70px;
+    font-size:450%;
     margin-top: 2%;
 }
 
@@ -126,11 +139,11 @@
     display: flex;
     flex-direction: row;
     width: 33%;
-    height: 100px;
+    height: 80%;
     justify-content: flex-end;
     align-items: center;
     padding: 3%;
-    gap: 30px;
+    gap: 5%;
 }
 
 .btn1{
@@ -143,7 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 150%;
 }
 .btn2{
     width: 40px;
@@ -155,7 +168,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size:150%;
 }
 .btn4{
     width: 40px;
@@ -167,7 +180,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 150%;
 }
 .btn3{
     width: 80px;
@@ -188,6 +201,7 @@
 .main{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
  /*pagina principal*/
@@ -196,14 +210,17 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
 }
 
 /*imagem da pagina principal*/
 .pagina1 img{
     margin-top: 3%;
-    width: 800px;
-    margin-left: -6%;
-    margin-right: -6%;
+    width: 70%;
+    margin-left: -8%;
+    margin-right: -8%;
 }
 
 /*texto da pagina principal*/
@@ -219,17 +236,18 @@
 
 .resumo h1{
     font-family: var(--fonte-texto);
-    font-size: 50px;
+    font-size: 320%;
     color: var(--verde-claro);
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     line-height: 100%;
 }
 
 .resumo p{
     font-family: var(--fonte-texto);
-    font-size: 20px;
+    font-size: 120%;
     text-align: justify;
+    line-height: 150%;
 }
 
 /*pagina 2 - links amazon*/
@@ -238,5 +256,87 @@
     background-color: var(--light-beige);
     flex-direction: column;
     width: 100%;
-    height: 30%;
+    height: 20%;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.pagina2 h2{
+    font-family: var(--fonte-upper);
+    font-size: 270%;
+    font-weight: 700;
+    color: var(--amarelo-escuro);
+    line-height: 80%;
+}
+
+/*imagens e link*/
+
+.livros-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.livro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+}
+
+.livro a{
+    text-decoration: none;
+    font-size: 100%;
+    font-family: var(--fonte-texto);
+    color: var(--verde-escuro);
+    font-weight: 700;
+    line-height: 80%;
+    margin-top: 20px;
+}
+
+.livro a:hover{
+    color: var(--amarelo-escuro);
+}
+
+.livro p{
+    font-size: 90%;
+    font-family: var(--fonte-texto);
+}
+
+.imagem-livro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.397);
+}
+
+.imagem-livro img{
+    height: 7.5%;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    height: 10%;
+    background-color: var(--verde-claro);
+}
+
+footer h3{
+    font-family: var(--fonte-texto);
+    color: #a2ceb8;
+    font-size:100%;
 }
