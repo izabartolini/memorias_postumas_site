@@ -201,14 +201,22 @@ main{
 }
 
 .principal{
-    background-image: url(../imagens/fundo-utfpr.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 532px;
+}
+
+.principal h1{
     font-size: 40px;
-    font-family: var(--fonte2);
-    color: rgb(0, 0, 0);
+    font-family: var(--fonte1);
+    color: var(--amarelo-escuro);
+    text-align: center;
+    background-color: white;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 70%;
 }
 
 
