@@ -87,7 +87,7 @@ body{
     padding: 3%;
 }
 .links a{
-    font-size: 90%;
+    font-size: 12px;
     text-decoration: none;
     color: var(--verde-escuro);
 }
