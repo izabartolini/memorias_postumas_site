@@ -1,0 +1,454 @@
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,700&display=swap');
+
+
+@font-face {
+    font-family: "Agoka";
+    src: url(../fontes/AgokaFamily.otf);
+}
+
+@font-face {
+    font-family: "Alstoria";
+    src: url(../fontes/Alstoria.ttf);
+}
+
+@font-face {
+    font-family: "LemonMilk";
+    src: url(../fontes/lemon_milk/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: "Shorelines";
+    src: url(../fontes/Shorelines\ Script\ Bold.otf);
+}
+
+/**/
+
+/*Definição de variáveis*/
+
+:root {
+    --amarelo-escuro: #d3a92e;
+    --amarelo-claro: #ecdc66;
+    --verde-escuro: #047461;
+    --verde-claro: #6cab8c;
+    --beige: #b7b395;
+    --light-beige: #f5f3e6;
+
+    --fonte1: "Agoka";
+    --fonte-texto: "DM Sans";
+    --fonte-detalhes: "Shorelines";
+    --fonte-upper: "LemonMilk";
+    --fonte2: "Alstoria";
+
+
+}
+
+/*animações*/
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+/*container*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    margin: 0%;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+/*links da nav*/
+
+.links {
+    width: 33%;
+    height: 100%;
+    font-family: var(--fonte-upper);
+    color: var(--verde-escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 3%;
+}
+
+.links a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--verde-escuro);
+}
+
+.links a:hover {
+    color: var(--verde-claro);
+
+}
+
+/* titulo da nav*/
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 90%;
+    width: 34%;
+    height: 80%;
+}
+
+.p1 {
+    font-family: var(--fonte-upper);
+    color: var(--verde-claro);
+    font-size: 160%;
+
+
+}
+
+.p2 {
+    font-family: var(--fonte-detalhes);
+    color: var(--amarelo-escuro);
+    font-size: 130%;
+    z-index: 1;
+    -webkit-text-stroke: #d3a92e 1px;
+}
+
+.p3 {
+    font-family: var(--fonte2);
+    color: var(--verde-escuro);
+    font-size: 450%;
+    margin-top: 2%;
+}
+
+/*botoes da nav*/
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    height: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3%;
+    gap: 5%;
+}
+
+.btn1 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--amarelo-claro);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.btn2 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--amarelo-claro);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.btn4 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-beige);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.btn3 {
+    width: 80px;
+    height: 40px;
+    background-color: var(--amarelo-claro);
+    color: white;
+    border-radius: 17%;
+    border: none;
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/*personagens*/
+
+.personagens {
+    display: inline-flex;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+    gap: 7%;
+}
+
+.personagem-menu1,
+.personagem-menu2 {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 90%;
+    border: 0px;
+    border-radius: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-top: 3%;
+}
+
+.personagem-menu1 .leia-mais {
+    display: none;
+    line-height: 0;
+}
+
+.personagem-menu2 .leia-mais {
+    display: none;
+    line-height: 0;
+}
+
+
+.personagem-menu2 {
+    background-image: linear-gradient(to bottom left, #6cab8c, #047461);
+
+}
+
+.personagem-menu1 {
+    background-image: linear-gradient(to bottom left, #ecdc66, #d3a92e);
+}
+
+.personagem-menu1 img {
+    height: 250px;
+    margin-top: -27%;
+    justify-self: center;
+}
+
+.personagem-menu2 img {
+    height: 250px;
+    margin-top: -27%;
+    justify-self: center;
+}
+
+.personagem-menu1 h1 {
+    text-align: left;
+    font-size: 30px;
+    font-family: var(--fonte-texto);
+}
+
+.personagem-menu2 h1 {
+    text-align: left;
+    font-size: 30px;
+    font-family: var(--fonte-texto);
+}
+
+.personagem-menu1 p {
+    font-size: 11px;
+    font-family: var(--fonte-texto);
+    text-align: left;
+}
+
+.personagem-menu2 p {
+    font-size: 11px;
+    font-family: var(--fonte-texto);
+    text-align: left;
+}
+
+.personagem-menu1 .texto,
+.personagem-menu2 .texto {
+    opacity: 0;
+    line-height: 0px;
+}
+
+/*hovers*/
+
+.personagem-menu1:hover .leia-mais,
+.personagem-menu2:hover .leia-mais {
+    display: block;
+    font-size: 10px;
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 150%;
+    animation-duration: 1ms;
+    animation-name: fade-in;
+}
+
+.personagem-menu1:hover img,
+.personagem-menu2:hover img {
+    height: 285px;
+    margin-top: -30%;
+}
+
+.personagem-menu1:hover h1,
+.personagem-menu2:hover h1 {
+    font-size: 35px;
+}
+
+.personagem-menu1:hover p,
+.personagem-menu2:hover p {
+    font-size: 14px;
+}
+
+.personagem-menu1:hover,
+.personagem-menu2:hover {
+    width: 25%;
+    height: 95%;
+    margin-bottom: 2%;
+}
+
+/*menu aberto*/
+
+.personagem-menuaberto1 {
+    background-image: linear-gradient(to bottom left, #ecdc66, #d3a92e);
+}
+
+.personagem-menuaberto2 {
+    background-image: linear-gradient(to bottom left, #6cab8c, #047461);
+}
+
+.personagem-menuaberto1,
+.personagem-menuaberto2 {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 150%;
+    align-self: flex-end;
+    justify-content: flex-end;
+    border: 0;
+    border-radius: 20% 0% 0% 0%;
+    margin-left: 10%;
+}
+
+.personagem-menuaberto1 h1,
+.personagem-menuaberto2 h1 {
+    font-size: 40px;
+    font-family: var(--fonte-texto);
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.personagem-menuaberto1 .texto,
+.personagem-menuaberto2 .texto {
+    font-size: 14px;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    padding-right: 10%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.personagem-menuaberto1 img,
+.personagem-menuaberto2 img {
+    height: 400px;
+    margin: 2%;
+    margin-top: 10%;
+}
+
+.personagem-menuaberto1 .leia-mais,
+.personagem-menuaberto2 .leia-mais {
+    display: none;
+    line-height: 0;
+}
+
+.personagem-menuaberto1 .livro,
+.personagem-menuaberto2 .livro {
+    display: none;
+    line-height: 0;
+}
+
+.invisivel{
+    display: none;
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    height: 7%;
+    background-color: var(--verde-claro);
+    position: fixed;
+    bottom: 0;
+}
+.footer-ajustado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    height: 10%;
+    background-color: var(--verde-claro);
+}
+
+footer h3 {
+    font-family: var(--fonte-texto);
+    color: #a2ceb8;
+    font-size: 15px;
+}
