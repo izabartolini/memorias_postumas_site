@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personagens</title>
     <link rel="stylesheet" href="personagens.css">
+
+    <script src="personagens.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
                 <p><a href="">Trabalho</a></p>
                 <p><a href="../instituicao/instituicao.html">Instituição</a></p>
                 <p><a href="../personagens/personagens.html">Personagens</a></p>
-                <p><a href="">Alunos</a></p>
+                <p><a href="../alunos/alunos.html">Alunos</a></p>
                 <p><a href="../landpage/landpage.html">Livro</a></p>
             </div>
 
@@ -34,8 +36,11 @@
         </nav>
 
         <main>
+            <div class="invisivel" id="containerseta">
+                <button id="seta">⬅</button>
+            </div>
             <div class="personagens">
-                <button class="personagem-menu1">
+                <button class="personagem-menu1" id="bras">
                     <div><img src="../imagens/bras_cubas.png" alt=""></div>
                     <div>
                         <h1>Brás Cubas</h1>
@@ -64,11 +69,11 @@
                         </p>
                     </div>
                 </button>
-                <button class="personagem-menu2" >
+                <button class="personagem-menu2" id="quincas" >
                     <div><img src="../imagens/quincas_borbas.png" alt=""></div>
                     <div>
                         <h1>Quincas Borba</h1>
-                        <p class=".livro">Livro <b>Memórias Póstumas de Brás Cubas</b></p>
+                        <p class="livro">Livro <b>Memórias Póstumas de Brás Cubas</b></p>
                         <p class="leia-mais">Leia Mais ></p>
                         <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam amet esse,
                             alias veritatis labore voluptates et, fugiat vitae error, nesciunt praesentium dicta laborum
@@ -99,7 +104,7 @@
 
         </main>
 
-        <footer>
+        <footer class="footer-normal" id="footer">
             <h3>Trabalho de Desenvolvimento web e Língua portuguesa sobre o livro Memórias Póstumas de Brás Cubas, pelos
                 alunos Izabelly Bartolini e Caio Botelho</h3>
         </footer>
