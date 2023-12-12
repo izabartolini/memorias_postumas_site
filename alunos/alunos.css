@@ -50,6 +50,7 @@
     from {
         margin-left: -100%;
     }
+
     to {
         margin-left: 0;
     }
@@ -77,6 +78,16 @@
     align-items: center;
     height: 120px;
     width: 100%;
+}
+
+/*icons*/
+
+.icon-visivel {
+    display: none;
+}
+
+.icon-invisivel {
+    display: none;
 }
 
 /*links da nav*/
@@ -232,11 +243,11 @@ main {
     justify-content: center;
 }
 
-.delimitador{
+.delimitador {
     width: 27%;
     height: 20%;
     margin-bottom: 3%;
-    background-color:none;
+    background-color: none;
     overflow: hidden;
 }
 
@@ -340,4 +351,237 @@ footer h3 {
     font-family: var(--fonte-texto);
     color: #a2ceb8;
     font-size: 15px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    /*ajuste tamanho da nav*/
+
+    .navbar {
+        height: 100px;
+    }
+
+    /* aparecer o icone do menu e sumir as opcoes*/
+    .icon-visivel {
+        display: block;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+        color: var(--verde-escuro);
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    .icon-invisivel {
+        display: none;
+    }
+
+    .icon-visivel:hover {
+        color: var(--verde-claro);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-aberto a {
+        display: block;
+        position: relative;
+        background-color: #f5f3e6;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--verde-escuro);
+
+    }
+
+    .links-aberto a:hover {
+        color: var(--verde-claro);
+
+    }
+
+    .links-aberto {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        background-color: #f5f3e698;
+        margin-top: 70%;
+        margin-right: 65%;
+        position: relative;
+        width: 30%;
+        height: 250%;
+        font-family: var(--fonte-upper);
+        color: var(--verde-escuro);
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        padding: 3%;
+        gap: 2%;
+    }
+
+    /*adaptar o tamanho do titulo*/
+
+    .titulo {
+        width: 80%;
+        /* margin-right: -100%; */
+        height: 100%;
+        z-index: 1;
+    }
+
+    .p1 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 15px;
+    }
+
+    .p3 {
+        font-size: 60px;
+    }
+
+    /*sumir os botoes de enfeite*/
+
+    .buttons {
+        display: none;
+    }
+
+
+    /*pagina inicio*/
+
+    .comeco {
+        width: 100%;
+        height: 400px;
+        background-image: url(../imagens/fundo-alunos.png);
+        background-position: 5px ; 
+        background-position-x: -85px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .delimitador {
+        width: 65%;
+        height: 20%;
+        margin-bottom: 8%;
+        background-color: none;
+        overflow: hidden;
+    }
+
+    /*container dos alunos*/
+
+    .aluno-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light-beige);
+    }
+
+    .imagem-aluno {
+        width: 150px;
+        height: 150px;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .imagem-aluno:first-of-type {
+        background-color: var(--amarelo-claro);
+    }
+
+    .imagem-aluno:last-of-type {
+        background-color: var(--verde-escuro);
+    }
+
+    .imagem-aluno img {
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .texto-aluno {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 110px;
+        justify-content: center;
+    }
+
+    .texto-aluno:first-of-type {
+        background-color: var(--verde-escuro);
+        margin-right: -5%;
+        padding-right: 7%;
+        padding-left: 5%;
+    }
+
+    .texto-aluno:last-of-type {
+        background-color: var(--amarelo-claro);
+        margin-left: -5%;
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .texto-aluno h2 {
+        font-size: 15px;
+        font-family: var(--fonte-upper);
+        color: white;
+    }
+
+    .texto-aluno p {
+        margin-top: 2%;
+        font-size: 10px;
+        font-family: var(--fonte-texto);
+        color: white;
+    }
+
+
+
+
+    /*ajuste footer*/
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        height: 10%;
+        background-color: var(--verde-claro);
+    }
+
+    footer h3 {
+        font-family: var(--fonte-texto);
+        color: #a2ceb8;
+        font-size: 6px;
+
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .buttons {
+        display: none;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .links {
+        width: 50%;
+    }
+
+    .icon-invisivel {
+        display: none;
+    }
+
+    .icon-visivel {
+        display: none;
+    }
+
 }

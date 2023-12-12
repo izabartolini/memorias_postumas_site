@@ -48,12 +48,12 @@
 
 /*container*/
 
-.container{
+.container {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
 }
@@ -61,6 +61,7 @@ body{
 * {
     margin: 0%;
 }
+
 /*Navbar*/
 .navbar {
     background-color: var(--light-beige);
@@ -86,15 +87,26 @@ body{
     font-weight: 700;
     padding: 3%;
 }
-.links a{
+
+.links a {
     font-size: 12px;
     text-decoration: none;
     color: var(--verde-escuro);
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--verde-claro);
 
+}
+
+/*icones*/
+
+.icon-visivel {
+    display: none;
+}
+
+.icon-invisivel {
+    display: none;
 }
 
 /* titulo da nav*/
@@ -129,13 +141,13 @@ body{
 .p3 {
     font-family: var(--fonte2);
     color: var(--verde-escuro);
-    font-size:450%;
+    font-size: 450%;
     margin-top: 2%;
 }
 
 /*botoes da nav*/
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     width: 33%;
@@ -146,7 +158,7 @@ body{
     gap: 5%;
 }
 
-.btn1{
+.btn1 {
     width: 40px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -158,7 +170,8 @@ body{
     justify-content: center;
     font-size: 150%;
 }
-.btn2{
+
+.btn2 {
     width: 40px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -168,12 +181,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:150%;
+    font-size: 150%;
 }
-.btn4{
+
+.btn4 {
     width: 40px;
     height: 40px;
-    background-color:var(--light-beige);
+    background-color: var(--light-beige);
     color: white;
     border-radius: 50%;
     border: none;
@@ -182,7 +196,8 @@ body{
     justify-content: center;
     font-size: 150%;
 }
-.btn3{
+
+.btn3 {
     width: 80px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -197,24 +212,24 @@ body{
     justify-content: center;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
 }
 
-.pagina-inicial{
+.pagina-inicial {
     background-image: url(../imagens/fundo-trabalho.png);
     width: 100%;
     height: 532px;
     background-repeat: no-repeat;
-    background-clip: border-box ;
+    background-clip: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.texto{
+.texto {
     width: 55%;
     height: 100%;
     display: flex;
@@ -224,7 +239,7 @@ main{
     margin-left: 5%;
 }
 
-.pagina-inicial h1{
+.pagina-inicial h1 {
     padding-left: 1%;
     height: 20%;
     width: 100%;
@@ -235,7 +250,7 @@ main{
     margin-bottom: 2%;
 }
 
-.pagina-inicial p{
+.pagina-inicial p {
     padding-left: 1%;
     height: 15%;
     width: 100%;
@@ -245,7 +260,7 @@ main{
     background-color: white;
 }
 
-.icones{
+.icones {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -255,38 +270,38 @@ main{
     gap: 50px;
 }
 
-.icones img{
+.icones img {
     height: 120px;
 }
 
-.disciplinas{
+.disciplinas {
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 600px;
-    
+
 }
 
-.disciplina{
+.disciplina {
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 300px;
 }
 
-.texto-disciplinas{
+.texto-disciplinas {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.disciplina h1{
+.disciplina h1 {
     margin: 5%;
     font-size: 30px;
     font-family: var(--fonte-upper);
 }
 
-.disciplina p{
+.disciplina p {
     margin-left: 5%;
     margin-right: 3%;
     font-size: 15px;
@@ -294,7 +309,7 @@ main{
     line-height: 180%;
 }
 
-.disciplina img{
+.disciplina img {
     width: 50%;
     height: 300px;
 }
@@ -304,7 +319,7 @@ main{
 
 /*footer*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,8 +329,259 @@ footer{
     background-color: var(--verde-claro);
 }
 
-footer h3{
+footer h3 {
     font-family: var(--fonte-texto);
     color: #a2ceb8;
-    font-size:100%;
+    font-size: 100%;
+}
+
+/*media query*/
+
+@media (max-width: 800px) {
+
+    /*ajuste tamanho da nav*/
+
+    .navbar {
+        height: 100px;
+    }
+
+    /* aparecer o icone do menu e sumir as opcoes*/
+    .icon-visivel {
+        display: block;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+        color: var(--verde-escuro);
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    .icon-invisivel {
+        display: none;
+    }
+
+    .icon-visivel:hover {
+        color: var(--verde-claro);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-aberto a {
+        display: block;
+        position: relative;
+        background-color: #f5f3e6;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--verde-escuro);
+
+    }
+
+    .links-aberto a:hover {
+        color: var(--verde-claro);
+
+    }
+
+    .links-aberto {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        background-color: #f5f3e698;
+        margin-top: 70%;
+        margin-right: 65%;
+        position: relative;
+        width: 30%;
+        height: 250%;
+        font-family: var(--fonte-upper);
+        color: var(--verde-escuro);
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        padding: 3%;
+        gap: 2%;
+    }
+
+    /*adaptar o tamanho do titulo*/
+
+    .titulo {
+        width: 80%;
+        /* margin-right: -100%; */
+        height: 100%;
+        z-index: 1;
+    }
+
+    .p1 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 15px;
+    }
+
+    .p3 {
+        font-size: 60px;
+    }
+
+    /*sumir os botoes de enfeite*/
+
+    .buttons {
+        display: none;
+    }
+
+    /*ajustar o tamanho da imagem e do resumo*/
+
+
+    .texto {
+        height: 140px;
+
+    }
+
+    /*ajustando pagina incial*/
+
+    .pagina-inicial {
+        background-image: url(../imagens/fundo-trabalho.png);
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .texto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0%;
+        margin: 3%;
+    }
+    
+    .pagina-inicial h1 {
+        padding-left: 1%;
+        height: 30%;
+        width: 90%;
+        font-size: 20px;
+        font-family: var(--fonte-upper);
+        background-color: white;
+        color: #047461;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    .pagina-inicial p {
+        font-size: 13px;
+        padding-left: 1%;
+        height: 53%;
+        width: 100%;
+        font-family: var(--fonte-texto);
+        line-height: 150%;
+        text-align: justify;
+        background-color: white;
+    }
+
+    /*ajuste dos icones*/
+    
+    .icones {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .icones img {
+        height: 80px;
+    }
+    
+
+    /*ajuste da seção das disciplinas*/ 
+    
+    .disciplinas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    
+    }
+    
+    .disciplina {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+    }
+    
+    .texto-disciplinas {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .disciplina h1 {
+        margin: 5%;
+        font-size: 18px;
+        font-family: var(--fonte-upper);
+    }
+    
+    .disciplina p {
+        margin-left: 5%;
+        margin-right: 3%;
+        font-size: 10px;
+        font-family: var(--fonte-texto);
+        line-height: 180%;
+    }
+    
+    .disciplina img {
+        width: 50%;
+        height: 200px;
+    }
+
+
+    /*ajuste footer*/
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        height: 10%;
+        background-color: var(--verde-claro);
+    }
+
+    footer h3 {
+        font-family: var(--fonte-texto);
+        color: #a2ceb8;
+        font-size: 6px;
+
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .buttons {
+        display: none;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .links {
+        width: 50%;
+    }
+
+    .icon-invisivel {
+        display: none;
+    }
+
+    .icon-visivel {
+        display: none;
+    }
+
 }

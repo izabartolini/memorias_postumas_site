@@ -53,7 +53,7 @@
 
 /*container*/
 
-.container{
+.container {
     width: 100%;
     height: 100%;
 }
@@ -68,6 +68,16 @@
     align-items: center;
     height: 120px;
     width: 100%;
+}
+
+/*icons*/
+
+.icon-visivel {
+    display: none;
+}
+
+.icon-invisivel {
+    display: none;
 }
 
 /*links da nav*/
@@ -85,12 +95,13 @@
     font-weight: 700;
     padding: 3%;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     color: var(--verde-escuro);
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--verde-claro);
 
 }
@@ -126,13 +137,13 @@
 .p3 {
     font-family: var(--fonte2);
     color: var(--verde-escuro);
-    font-size:70px;
+    font-size: 70px;
     margin-top: 2%;
 }
 
 /*botoes da nav*/
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     width: 33%;
@@ -143,7 +154,7 @@
     gap: 30px;
 }
 
-.btn1{
+.btn1 {
     width: 40px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -155,7 +166,8 @@
     justify-content: center;
     font-size: 25px;
 }
-.btn2{
+
+.btn2 {
     width: 40px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -167,10 +179,11 @@
     justify-content: center;
     font-size: 25px;
 }
-.btn4{
+
+.btn4 {
     width: 40px;
     height: 40px;
-    background-color:var(--light-beige);
+    background-color: var(--light-beige);
     color: white;
     border-radius: 50%;
     border: none;
@@ -179,7 +192,8 @@
     justify-content: center;
     font-size: 25px;
 }
-.btn3{
+
+.btn3 {
     width: 80px;
     height: 40px;
     background-color: var(--amarelo-claro);
@@ -194,13 +208,13 @@
     justify-content: center;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.principal{
+.principal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +222,7 @@ main{
     height: 532px;
 }
 
-.img1{
+.img1 {
     display: flex;
     align-items: center;
     width: 50%;
@@ -218,12 +232,12 @@ main{
 
 }
 
-.img1 img{
+.img1 img {
     width: 100%;
     height: 80%;
 }
 
-.principal h1{
+.principal h1 {
     font-size: 50px;
     font-family: var(--fonte-upper);
     color: var(--amarelo-claro);
@@ -234,12 +248,12 @@ main{
     padding-left: 2%;
     width: 30%;
     text-align: right;
-    
+
 }
 
 /*pagina de informacoes*/
 
-.informacoes-curso{
+.informacoes-curso {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -251,7 +265,7 @@ main{
 
 /*texto*/
 
-.texto{
+.texto {
     font-family: var(--fonte-texto);
     font-size: 15px;
     text-align: justify;
@@ -261,13 +275,13 @@ main{
 
 /*links sobre o curso*/
 
-.informacoes{
+.informacoes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.informacoes h2{
+.informacoes h2 {
     font-family: var(--fonte-texto);
     text-transform: uppercase;
     color: var(--verde-escuro);
@@ -276,7 +290,7 @@ main{
     line-height: 100%;
 }
 
-.informacoes a:first-of-type{
+.informacoes a:first-of-type {
     font-family: var(--fonte-texto);
     font-size: 15px;
     text-align: center;
@@ -286,13 +300,13 @@ main{
     font-weight: 700;
 }
 
-.informacoes a:first-of-type:hover{
-    
+.informacoes a:first-of-type:hover {
+
     color: var(--amarelo-escuro);
-    
+
 }
 
-.informacoes a:last-of-type{
+.informacoes a:last-of-type {
     font-family: var(--fonte-texto);
     font-size: 20px;
     text-align: center;
@@ -300,53 +314,55 @@ main{
     font-weight: 600;
 }
 
-.informacoes a:last-of-type:hover{
+.informacoes a:last-of-type:hover {
     color: var(--amarelo-escuro);
 
 
 }
 
-.informacoes img{
+.informacoes img {
     width: 415px;
 }
 
 /*mais sobre o curso*/
 
-.sobre-curso{
+.sobre-curso {
     display: flex;
     flex-direction: row;
     width: 90%;
     padding: 3%;
-    align-items:center;
+    align-items: center;
     justify-content: space-evenly;
     font-family: var(--fonte-texto);
 }
 
-.dados, .coordenacao{
+.dados,
+.coordenacao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
 }
 
-.dados h1,.coordenacao h1{
+.dados h1,
+.coordenacao h1 {
     color: var(--amarelo-escuro);
     font-size: 40px;
 }
 
-.dados ul li{
+.dados ul li {
     font-size: 20px;
     margin-left: 10%;
     list-style: square;
 }
 
-.coordenacao p{
+.coordenacao p {
     font-size: 18px;
     line-height: 180%;
     margin-left: 5%;
 }
 
-.coordenacao hr{
+.coordenacao hr {
     border: none;
     width: 80%;
     height: 2px;
@@ -355,19 +371,19 @@ main{
     margin-bottom: 4%;
 }
 
-.coordenacao a{
+.coordenacao a {
     color: var(--verde-escuro);
     font-size: 18px;
     font-weight: 600;
 }
 
-.coordenacao a:hover{
+.coordenacao a:hover {
     color: var(--verde-claro);
 }
 
 /*separadpr*/
 
-.separador1{
+.separador1 {
     align-self: center;
     background-color: #d3a92e;
     width: 2px;
@@ -378,7 +394,7 @@ main{
 
 /*footer*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -388,8 +404,292 @@ footer{
     background-color: var(--verde-claro);
 }
 
-footer h3{
+footer h3 {
     font-family: var(--fonte-texto);
     color: #a2ceb8;
     font-size: 15px;
+}
+
+@media (max-width: 800px) {
+
+    /*ajuste tamanho da nav*/
+
+    .navbar {
+        height: 100px;
+    }
+
+    /* aparecer o icone do menu e sumir as opcoes*/
+    .icon-visivel {
+        display: block;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+        color: var(--verde-escuro);
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    .icon-invisivel {
+        display: none;
+    }
+
+    .icon-visivel:hover {
+        color: var(--verde-claro);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-aberto a {
+        display: block;
+        position: relative;
+        background-color: #f5f3e6;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--verde-escuro);
+
+    }
+
+    .links-aberto a:hover {
+        color: var(--verde-claro);
+
+    }
+
+    .links-aberto {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        background-color: #f5f3e698;
+        margin-top: 70%;
+        margin-right: 65%;
+        position: relative;
+        width: 30%;
+        height: 250%;
+        font-family: var(--fonte-upper);
+        color: var(--verde-escuro);
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        padding: 3%;
+        gap: 2%;
+    }
+
+    /*adaptar o tamanho do titulo*/
+
+    .titulo {
+        width: 80%;
+        /* margin-right: -100%; */
+        height: 100%;
+        z-index: 1;
+    }
+
+    .p1 {
+        font-size: 20px;
+    }
+
+    .p2 {
+        font-size: 15px;
+    }
+
+    .p3 {
+        font-size: 60px;
+    }
+
+    /*sumir os botoes de enfeite*/
+
+    .buttons {
+        display: none;
+    }
+
+
+    /*ajuste pagina incial*/
+
+    .principal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .img1 {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        margin: 2%;
+        margin-left: 2%;
+    
+    }
+    
+    .img1 img {
+        width: 95%;
+        height: 80%;
+    }
+    
+    .principal h1 {
+        font-size: 28.5px;
+        font-family: var(--fonte-upper);
+        color: var(--amarelo-claro);
+        -webkit-text-stroke: 1px var(--amarelo-escuro);
+        background-color: white;
+        padding-right: 0%;
+        padding-left: 2%;
+        width: 50%;
+        text-align: right;
+    
+    }
+    
+    /*ajuste da pagina de informacoes*/
+    
+    .informacoes-curso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--light-beige);
+        width: 94%;
+        padding: 3%;
+    }
+    
+    /* ajustando texto de informacoes*/
+    
+    .texto {
+        font-family: var(--fonte-texto);
+        font-size: 15px;
+        text-align: justify;
+        line-height: 180%;
+        width: 90%;
+        margin-top: 5%;
+    }
+    
+    /*ajustando links sobre o curso*/
+    
+    
+    .informacoes h2 {
+        font-family: var(--fonte-texto);
+        text-transform: uppercase;
+        color: var(--verde-escuro);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    /* ajustando pagina mais sobre o curso*/
+    
+    .sobre-curso {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 3%;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fonte-texto);
+    }
+    
+    .dados,
+    .coordenacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .dados h1,
+    .coordenacao h1 {
+        color: var(--amarelo-escuro);
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .dados ul li {
+        font-size: 15px;
+        margin-left: 15%;
+        list-style: square;
+    }
+    
+    .coordenacao p {
+        font-size: 15px;
+        line-height: 180%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    
+    .coordenacao hr {
+        border: none;
+        width: 100%;
+        height: 2px;
+        background-color: var(--verde-claro);
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    
+    .coordenacao a {
+        color: var(--verde-escuro);
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .coordenacao a:hover {
+        color: var(--verde-claro);
+    }
+    
+    /*separadpr*/
+    
+    .separador1 {
+        align-self: center;
+        background-color: #d3a92e;
+        width: 100%;
+        height: 2px;
+        border: none;
+        margin-top: 5%;
+    }
+
+
+    /*ajuste footer*/
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        height: 10%;
+        background-color: var(--verde-claro);
+    }
+
+    footer h3 {
+        font-family: var(--fonte-texto);
+        color: #a2ceb8;
+        font-size: 6px;
+
+    }
+}
+
+/*media query mediano*/
+
+@media (min-width: 801px ) and (max-width: 1000px) {
+    .buttons{
+        display: none;
+    }
+    .navbar{
+        height:100px;
+    }
+
+    .links{
+        width: 50%;
+    }
+
+    .icon-invisivel{
+        display: none;
+    }
+
+    .icon-visivel{
+        display: none;
+    }
+    
 }
